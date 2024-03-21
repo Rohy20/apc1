@@ -6,17 +6,17 @@
 #include <stdio.h>
 
 int main() {
-  int base = 0, altura = 0;
+  float base = 0, altura = 0;
 
   printf("Insira a base: ");
-  scanf("%i", &base);
+  scanf("%f", &base);
 
   printf("Insira a altura: ");
-  scanf("%i", &altura);
+  scanf("%f", &altura);
 
-  int area = base * altura / 2;
+  float area = base * altura / 2;
 
-  printf("A area do triangulo eh %i\n", area);
+  printf("A area do triangulo eh %f\n", area);
 
   return 0;
 }
