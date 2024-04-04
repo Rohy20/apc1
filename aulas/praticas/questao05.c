@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-int main(){
-  float GB = 0.00;
 
-  printf("Quantos GB??: ");
-  scanf("%f", &GB);
+int main() {
+    double gigabytes;
+    double bytes;
 
-  double bytes = 1024000;
+    printf("Insira o valor em Gigabytes: ");
+    scanf("%lf", &gigabytes);
 
-  double conversao = GB*bytes;
+    bytes = gigabytes * 1024 * 1024 * 1024;
 
-  printf("O valor em bytes é: %f\n", conversao);
-  
-  return 0;
+    printf("%.2f Gigabytes equivale a %.0f Bytes.\n", gigabytes, bytes);
+
+    return 0;
 }
